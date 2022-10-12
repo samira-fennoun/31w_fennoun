@@ -16,7 +16,7 @@
 get_header();
 
 ?>
-<h1>index.php</h1>
+<h1>single.php</h1>
 <main class="site__main">
 
 	<?php
@@ -28,18 +28,11 @@ get_header();
 
 			<h1><?= get_the_title(); ?></h1>
 
-			<?php the_content();
-			
-			$le_permalien="<a href='".get_the_permalink()."'>Suite</a>";
-			
-			?>
+			<?php the_content();?>
 
 
-			<blockquote><?php the_excerpt() ?></blockquote><!--resume-->
-			<blockquote><?= wp_trim_words(get_the_excerpt(), 5,$le_permalien);	?></blockquote>
-			<pre><?php the_category();	?></pre>
-			<pre><?php the_date();	?></pre>
-			<pre><?php the_permalink();	?></pre>
+			
+			
 
 
 
@@ -56,5 +49,5 @@ get_header();
 </main><!-- #main -->
 
 <?php
-wp_footer();
+
 get_footer();
