@@ -16,7 +16,7 @@
 get_header();
 
 ?>
-<h1>index.php</h1>
+<h1>category-cour.php</h1>
 <main class="site__main">
 
 	<?php
@@ -24,9 +24,19 @@ get_header();
 
 		/* Start the Loop */
 		while (have_posts()) :
-			the_post(); ?>
+			the_post();
+			
+			$titre=get_the_title();
+			$code_cours=substr($titre,0,7);
+			$heure_cours=strpos($titre,"(");
+			$heure_cours=substr($titre,$heure_cours);
+			$titre=substr($titre,8);
+			$titre=substr($titre,0,strpos($titre,"(")-strlen($titre));
+			?>
 
-			<h1><?= get_the_title(); ?></h1>
+			 
+
+			<h1><?= $titre  ?></h1>
 
 			<?php the_content();
 			
