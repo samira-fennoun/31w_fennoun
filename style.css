@@ -490,11 +490,18 @@ big {
   font-size: 125%;
 }
 
-h1,
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  clear: both;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }/*# sourceMappingURL=style.css.map */

@@ -37,7 +37,8 @@ get_header();
 			 
 
 			<h1><?= $titre  ?></h1>
-
+			<code> Code du cours :<?= $code_cours  ?></code>
+			<code> /Nombre d'heure :<?= $heure_cours  ?></code>
 			<?php the_content();
 			
 			$le_permalien="<a href='".get_the_permalink()."'>Suite</a>";
