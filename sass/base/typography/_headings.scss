@@ -1,14 +1,16 @@
-h1,
+h1{
+	font-size: clamp(2rem,3vw,5rem);
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-	clear: both;
+	font-size: clamp(1rem,2vw,3rem);
 }
   
 
 h1{
 	
-	font-family: $font_titre;
+	font-family: $font__titre;
 }
