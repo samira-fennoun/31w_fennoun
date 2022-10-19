@@ -533,19 +533,21 @@ h6 {
   grid-template-areas: "header header" "sidebar main" "footer footer";
 }
 
-.site-header {
+.site__header {
   grid-area: header;
+  background-color: rgb(238, 194, 165);
 }
 
-.site-main {
+.site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget-area {
+.site__sidebar {
   grid-area: sidebar;
+  background-color: rgb(39, 247, 247);
 }
 
-.site-footer {
+.site__footer {
   grid-area: footer;
 }/*# sourceMappingURL=style.css.map */
