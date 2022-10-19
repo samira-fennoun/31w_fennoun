@@ -514,4 +514,16 @@ h5 {
 
 h6 {
   font-size: clamp(0.6rem, 2vw, 2rem);
+}
+
+.menu__primaire {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__primaire .menu {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */

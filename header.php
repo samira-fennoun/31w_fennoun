@@ -26,8 +26,12 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'igc31w' ); ?></a>
 
 	<header id="masthead" class="site__header">
-		<?php  wp_nav_menu(array(
-			"menu"=>"primaire"
+		<?php  
+		wp_nav_menu(array(
+
+			"menu"=>"primaire",
+			"container"=>"nav",
+			"container_class"=>"menu__primaire"
 		)) 
 		?>
 		<div class="site__branding">
