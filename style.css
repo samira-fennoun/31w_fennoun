@@ -523,7 +523,29 @@ h6 {
 
 .menu__primaire .menu {
   display: flex;
-  justify-content: space-around;
-  margin-left: 10%;
+  justify-content: space-between;
   list-style-type: none;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  grid-area: sidebar;
+}
+
+.site-footer {
+  grid-area: footer;
 }/*# sourceMappingURL=style.css.map */

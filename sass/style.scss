@@ -26,6 +26,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // Import variables .
 @import "variables/colors";
 @import "variables/typography";
+@import "variables/structure";
 
 /*--------------------------------------------------------------
 # Generic
@@ -59,5 +60,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 //composants
 
 @import "composants/nav_primaire";
+@import "layouts/sidebar-content";
+
 
 
