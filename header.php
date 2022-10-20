@@ -53,17 +53,7 @@
 			<?php endif; ?>
 		</div><!-- .site__branding -->
 
-		<!-- <nav id="site__navigation" class="main__navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'igc31w' ); ?></button>
-			<?php
-			// wp_nav_menu(
-			// 	array(
-			// 		'theme_location' => 'menu-1',
-			// 		'menu_id'        => 'primary-menu',
-			// 	)
-			// );
-			?>
-		</nav>#site__navigation -->
+		
 	</header><!-- #masthead -->
 
 	<aside class="site__sidebar">

@@ -523,7 +523,9 @@ h6 {
 
 .menu__primaire .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-left: 12%;
+  flex: 1;
   list-style-type: none;
 }
 
@@ -550,4 +552,5 @@ h6 {
 
 .site__footer {
   grid-area: footer;
+  background-color: #bbb;
 }/*# sourceMappingURL=style.css.map */

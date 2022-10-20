@@ -4,8 +4,9 @@
 }
 
 .menu__primaire .menu{
-    display: flex;
-    justify-content: space-between;
-    // margin-left: 10%;
-    list-style-type: none
+    display :flex;
+    justify-content:space-around;
+    margin-left : 12%;
+    flex:1;
+    list-style-type: none;
 }
