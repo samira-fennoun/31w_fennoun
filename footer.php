@@ -12,7 +12,7 @@
 ?>
 
 	<footer  class="site__footer">
-		<h2>pied de page</h2>
+		<h2>pied de page de 31w</h2>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -529,6 +529,10 @@ h6 {
   list-style-type: none;
 }
 
+.menu__primaire .menu-item a {
+  text-decoration: none;
+}
+
 .site {
   display: grid;
   grid-template-columns: 20% auto;
