@@ -551,16 +551,27 @@ h6 {
   padding: 3px 4px;
 }
 
+.sidebar {
+  padding: 2rem 0;
+}
+
+.site__footer {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header " "sidebar" "main" "footer";
+  grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
 @media screen and (min-width: 700px) {
   .site {
     display: grid;
     grid-template-columns: 20% auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }
 
@@ -571,7 +582,13 @@ h6 {
 
 .site__main {
   grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site__menu {
+  grid-area: menu;
+  background-color: rgb(39, 247, 247);
 }
 
 .site__sidebar {
