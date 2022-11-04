@@ -204,3 +204,76 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
     return $obj_menu;
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
+
+function my_register_sidebars()
+{
+	/* Register the 'primary' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'aside-1',
+			'name'          => __('sidebar aside-1'),
+			'description'   => __('A short description of the sidebar.'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'aside-2',
+			'name'          => __('sidebar aside-2'),
+			'description'   => __('A short description of the sidebar.'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'footer-1',
+			'name'          => __('Sidebar footer-1'),
+			'description'   => __('A short description of the sidebar.'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'footer-2',
+			'name'          => __('Sidebar footer-2'),
+			'description'   => __('A short description of the sidebar.'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'footer-3',
+			'name'          => __('Sidebar footer-3'),
+			'description'   => __('A short description of the sidebar.'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'footer-4',
+			'name'          => __('Sidebar footer-4'),
+			'description'   => __('A short description of the sidebar.'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	/* Repeat register_sidebar() code for additional sidebars. */
+}
