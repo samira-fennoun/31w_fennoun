@@ -21,6 +21,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/* ------------------------------------------------- Lien menu aside */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -91,6 +92,8 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: white;
 }
 
 /**
@@ -491,6 +494,7 @@ big {
 }
 
 h1 {
+  color: #7d2d27;
   font-size: clamp(1rem, 5vw, 5rem);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -531,13 +535,50 @@ h6 {
 
 .menu__primaire .menu-item a {
   text-decoration: none;
+  color: #E6EFF1;
+}
+
+.chkBurger {
+  display: none;
+}
+
+.chkBurger:checked ~ .burger {
+  transform: rotate(90deg);
+}
+
+.chkBurger:checked ~ .menu__aside {
+  transform: translateX(0);
+}
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  transition: transform 0.5s;
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .menu__aside {
+  background-color: #7D2D27;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  position: absolute;
+  top: 30px;
+  transform: translateX(-100vw);
+  transition: transform 0.5s;
+  width: 100vw;
+}
+@media screen and (min-width: 700px) {
+  .menu__aside {
+    position: static;
+    width: 100%;
+    transform: translateX(0);
+  }
 }
 
 .menu__aside .menu {
@@ -549,6 +590,7 @@ h6 {
 .menu__aside .menu-item a {
   text-decoration: none;
   padding: 3px 4px;
+  color: #fff;
 }
 
 .sidebar {
@@ -577,7 +619,7 @@ h6 {
 
 .site__header {
   grid-area: header;
-  background-color: rgb(238, 194, 165);
+  background-color: #879D78;
 }
 
 .site__main {
@@ -587,16 +629,17 @@ h6 {
 }
 
 .site__menu {
+  position: relative;
   grid-area: menu;
   background-color: rgb(39, 247, 247);
 }
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: rgb(39, 247, 247);
+  background-color: #C9BF93;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #bbb;
+  background-color: #879D78;
 }/*# sourceMappingURL=style.css.map */

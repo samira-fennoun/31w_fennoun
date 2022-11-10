@@ -8,6 +8,7 @@
 		"main"
 		"sidebar"
 		"footer";
+
 	@media screen and(min-width:700px) {
 		display: grid;
 		grid-template-columns: ($size__site-sidebar) auto;
@@ -22,28 +23,30 @@
 
 .site__header {
 	grid-area: header;
-	background-color: rgb(238, 194, 165);
+	background-color: #879D78;
 }
 
 .site__main {
+
 	grid-area: main;
 	overflow: hidden;
 	/* Resolves issue with <pre> elements forcing full width. */
 }
 
 .site__menu {
+	position: relative;
 	grid-area: menu;
 	background-color: rgb(39, 247, 247);
 }
 
 .site__sidebar {
 	grid-area: sidebar;
-	background-color: rgb(39, 247, 247);
+	background-color: #C9BF93;
 }
 
 .site__footer {
 	grid-area: footer;
-	background-color: #bbb;
+	background-color: #879D78;
 }
 
 //@import "no-menu";
