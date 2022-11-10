@@ -29,32 +29,32 @@
 
         <header id="masthead" class="site__header">
             <?php
-			wp_nav_menu(array(
+            wp_nav_menu(array(
 
-				"menu" => "primaire",
-				"container" => "nav",
-				"container_class" => "menu__primaire"
-			))
-			?>
+                "menu" => "primaire",
+                "container" => "nav",
+                "container_class" => "menu__primaire"
+            ))
+            ?>
             <div class="site__branding">
                 <?php
-				the_custom_logo();
-				if (is_front_page() && is_home()) :
-				?>
+                the_custom_logo();
+                if (is_front_page() && is_home()) :
+                ?>
                 <h1 class="site__title"><a href="<?php echo esc_url(home_url('/')); ?>"
                         rel="home"><?php bloginfo('name'); ?></a></h1>
                 <?php
-				else :
-				?>
+                else :
+                ?>
                 <p class="site__title"><a href="<?php echo esc_url(home_url('/')); ?>"
                         rel="home"><?php bloginfo('name'); ?></a></p>
                 <?php
-				endif;
-				$igc31w_description = get_bloginfo('description', 'display');
-				if ($igc31w_description || is_customize_preview()) :
-				?>
+                endif;
+                $igc31w_description = get_bloginfo('description', 'display');
+                if ($igc31w_description || is_customize_preview()) :
+                ?>
                 <p class="site__description"><?php echo $igc31w_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-													?></p>
+                                                    ?></p>
                 <?php endif; ?>
             </div><!-- .site__branding -->
 
@@ -62,16 +62,17 @@
         </header><!-- #masthead -->
 
         <aside class="site__menu">
-            <h2>Menu aside</h2>
+            <input type="checkbox" name="" id="chkBurger" class="chkBurger">
+            <label for="chkBurger" class="burger"><code>&#9776</code></label>
 
             <?php
-			wp_nav_menu(array(
+            wp_nav_menu(array(
 
-				"menu" => "aside",
-				"container" => "nav",
-				"container_class" => "menu__aside"
-			))
-			?>
+                "menu" => "aside",
+                "container" => "nav",
+                "container_class" => "menu__aside"
+            ))
+            ?>
 
         </aside>
 
