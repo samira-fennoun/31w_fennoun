@@ -19,6 +19,15 @@ get_header();
 <main class="site__main">
     <code>front-page.php</code>
     <?php
+    wp_nav_menu(array(
+        "menu" => "evenement",
+        "container" => "nav",
+        "container_class" => "menu_evenement"
+    ));
+
+
+
+
     if (have_posts()) :
         /* Start the Loop */
         while (have_posts()) :
