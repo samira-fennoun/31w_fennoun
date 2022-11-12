@@ -34,6 +34,7 @@ get_header();
             the_post(); ?>
     <h1><?= get_the_title(); ?></h1>
 
+
     <?php the_content();
             $le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
             ?>
