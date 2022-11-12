@@ -19,19 +19,27 @@ get_header();
 <h1>single.php</h1>
 <main class="site__main">
 
-	<?php
+    <?php
 	if (have_posts()) :
 
 		/* Start the Loop */
 		while (have_posts()) :
 			the_post(); ?>
 
-			<h1><?= get_the_title(); ?></h1>
+    <h1><?= get_the_title(); ?></h1>
 
-			<?php the_content();?>
+    <header>
+
+        <h3><?= $titre  ?></h3>
+        <code> Code du cours :<?php the_field('sigle_du_cours'); ?></code>
+        <code> /Nombre d'heure :<?php the_field('duree_du_cours'); ?></code>
+        <code> /Nombre d'heure :<?php the_field('type_de_cours'); ?></code>
+    </header>
+
+    <?php the_content(); ?>
 
 
-	<?php
+    <?php
 
 		endwhile;
 
