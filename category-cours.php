@@ -20,43 +20,37 @@ get_header();
 <main class="site__main">
 
     <?php
-	if (have_posts()) :
+    if (have_posts()) :
 
-		/* Start the Loop */
-		while (have_posts()) :
-			the_post();
+        /* Start the Loop */
+        while (have_posts()) :
+            the_post();
 
-			$titre = get_the_title();
-			$code_cours = substr($titre, 0, 7);
-			$heure_cours = strpos($titre, "(");
-			$heure_cours = substr($titre, $heure_cours);
-			$titre = substr($titre, 8);
-			$titre = substr($titre, 0, strpos($titre, "(") - strlen($titre));
-	?>
+            $titre = get_the_title();
+            $code_cours = substr($titre, 0, 7);
+            $heure_cours = strpos($titre, "(");
+            $heure_cours = substr($titre, $heure_cours);
+            $titre = substr($titre, 8);
+            $titre = substr($titre, 0, strpos($titre, "(") - strlen($titre));
+    ?>
 
 
 
     <header>
 
-        <h3><?= $titre  ?></h3>
+        <h5><?= $titre  ?></h5>
         <code> Code du cours :<?php the_field('sigle_du_cours'); ?></code>
         <code> /Nombre d'heure :<?php the_field('duree_du_cours'); ?></code>
         <code> /Nombre d'heure :<?php the_field('type_de_cours'); ?></code>
     </header>
-    <?php the_content();
+    <?php
 
-			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
+            $le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
 
-			?>
+            ?>
 
 
-    <blockquote><?php the_excerpt() ?></blockquote>
-    <!--resume-->
-    <blockquote><?= wp_trim_words(get_the_excerpt(), 5, $le_permalien);	?></blockquote>
-    <pre><?php the_category();	?></pre>
-    <pre><?php the_date();	?></pre>
-    <pre><?php the_permalink();	?></pre>
-    <pre><?php the_author();	?></pre>
+    <p><?= wp_trim_words(get_the_excerpt(), 5, $le_permalien); ?></p>
 
 
 
@@ -65,10 +59,10 @@ get_header();
 
     <?php
 
-		endwhile;
+        endwhile;
 
-	endif;
-	?>
+    endif;
+    ?>
 
 </main><!-- #main -->
 
