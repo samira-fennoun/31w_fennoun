@@ -22,7 +22,7 @@ get_header();
     wp_nav_menu(array(
         "menu" => "evenement",
         "container" => "nav",
-        "container_class" => "menu_evenement"
+        "container_class" => "evenement"
     ));
 
 
