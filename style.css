@@ -593,6 +593,34 @@ h6 {
   color: #fff;
 }
 
+.evenement .menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.evenement .menu-item {
+  flex: 0 1 200px;
+  border: 1px solid #aaa;
+}
+
+.evenement .menu-item a {
+  text-decoration: none;
+}
+
+.evenement__stage {
+  background-color: #879d78;
+}
+
+.evenement__projet {
+  background-color: #c9bf93;
+}
+
+.evenement__porte {
+  background-color: #dddddd;
+}
+
 .sidebar {
   padding: 2rem 0;
 }
