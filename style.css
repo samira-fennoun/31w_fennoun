@@ -605,20 +605,32 @@ h6 {
   border: 1px solid #aaa;
 }
 
-.evenement .menu-item a {
-  text-decoration: none;
+.menu-item-icone {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
 }
 
 .evenement__stage {
   background-color: #879d78;
 }
 
+.evenement__stage .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
+}
+
 .evenement__projet {
   background-color: #c9bf93;
+}
+.evenement__projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
 }
 
 .evenement__porte {
   background-color: #dddddd;
+}
+.evenement__porte .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=chip");
 }
 
 .grille {
