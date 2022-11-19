@@ -621,6 +621,16 @@ h6 {
   background-color: #dddddd;
 }
 
+.grille {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grille__article {
+  flex: 0 1 250px;
+}
+
 .sidebar {
   padding: 2rem 0;
 }
