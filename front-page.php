@@ -17,7 +17,7 @@ get_header();
 
 ?>
 <main class="site__main">
-    <code>front-page.php</code>
+    <code>--front-page--</code>
     <?php
     wp_nav_menu(array(
         "menu" => "evenement",
@@ -25,29 +25,38 @@ get_header();
         "container_class" => "evenement"
     ));
 
+?>
+
+    <section class="grille">
+        <?php
+		if ( have_posts() ) :
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post(); ?>
+
+        <article class="grille__article">
+            <h6><?= get_the_title(); ?></h6>
+            ------------------
+            <?php // echo (is_category('galerie')) ?>
+
+            <?php 
+		
+			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
+			?>
+
+
+            <p><?= wp_trim_words(get_the_excerpt(), 20,$le_permalien) ; ?></p>
 
 
 
-    if (have_posts()) :
-        /* Start the Loop */
-        while (have_posts()) :
-            the_post(); ?>
-    <h1><?= get_the_title(); ?></h1>
 
+        </article>
+        <?php
+            	endwhile;
+			endif;	
+		?>
 
-    <?php the_content();
-            $le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
-            ?>
-
-    <blockquote><?php the_excerpt(); ?></blockquote>
-    <blockquote><?= wp_trim_words(get_the_excerpt(), 5, $le_permalien); ?></blockquote>
-
-
-
-    <?php
-        endwhile;
-    endif;
-    ?>
+    </section>
 </main><!-- #main -->
 <?php
 get_footer();
