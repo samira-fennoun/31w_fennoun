@@ -25,36 +25,54 @@ get_header();
         "container_class" => "evenement"
     ));
 
-?>
+    ?>
 
     <section class="grille">
         <?php
-		if ( have_posts() ) :
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post(); ?>
-
+        if (have_posts()) :
+            /* Start the Loop */
+            while (have_posts()) :
+                the_post(); ?>
         <article class="grille__article">
-            <h6><?= get_the_title(); ?></h6>
-            ------------------
-            <?php // echo (is_category('galerie')) ?>
 
-            <?php 
-		
-			$le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
-			?>
+            <?php
 
+                    $titre = get_the_title();
+                    $code_cours = substr($titre, 0, 7);
+                    $heure_cours = strpos($titre, "(");
+                    $heure_cours = substr($titre, $heure_cours);
+                    $titre = substr($titre, 8);
+                    $longueur = strlen($titre);
+                    $titre = substr($titre, 0, strpos($titre, "(") - strlen($titre));
+                    ?>
+            <?php
 
-            <p><?= wp_trim_words(get_the_excerpt(), 20,$le_permalien) ; ?></p>
-
-
-
+                    $le_permalien = "<a href='" . get_the_permalink() . "'>Suite</a>";
+                    ?>
 
         </article>
-        <?php
-            	endwhile;
-			endif;	
-		?>
+        <?php if (in_category('galerie')) : ?>
+
+        <article class="grille__galerie">
+
+            <?php the_content(); ?>
+        </article>
+        <?php else : ?>
+
+        <article class="grille__article">
+
+
+            <h6><?= $titre; ?></h6>
+
+            <p><?= wp_trim_words(get_the_excerpt(), 20, $le_permalien); ?></p>
+            <p>Type de cours: <?php the_field("type_de_cours") ?></p>
+            <p>TIM-college de Maisonneuve</p>
+
+            <?php
+                    endif;
+                endwhile;
+            endif;
+                ?>
 
     </section>
 </main><!-- #main -->
