@@ -20,11 +20,13 @@ get_header();
 <main class="site__main">
 
     <?php
-	if (have_posts()) :
+    if (have_posts()) :
 
-		/* Start the Loop */
-		while (have_posts()) :
-			the_post(); ?>
+        /* Start the Loop */
+        while (have_posts()) :
+            the_post(); ?>
+
+    <?php the_post_thumbnail('thumbnail');   ?>
 
     <h1><?= get_the_title(); ?></h1>
 
@@ -41,10 +43,10 @@ get_header();
 
     <?php
 
-		endwhile;
+        endwhile;
 
-	endif;
-	?>
+    endif;
+    ?>
 
 </main><!-- #main -->
 
