@@ -63,7 +63,9 @@
 
         <aside class="site__menu">
             <input type="checkbox" name="" id="chkBurger" class="chkBurger">
-            <label for="chkBurger" class="burger"><code>&#9776</code></label>
+            <label for="chkBurger" class="burger">
+                <code>&#9776</code>
+            </label>
 
             <?php
             wp_nav_menu(array(
