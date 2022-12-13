@@ -529,7 +529,7 @@ h6 {
 .menu__primaire .menu {
   display: flex;
   justify-content: space-around;
-  margin-left: 12%;
+  margin-left: 50%;
   flex: 1;
   list-style-type: none;
 }
@@ -657,7 +657,7 @@ h6 {
 }
 
 .sidebar {
-  padding: 2rem 0;
+  padding: 0 2rem 0;
 }
 
 .site__footer {
@@ -683,6 +683,22 @@ h6 {
 .site__header {
   grid-area: header;
   background-color: #879D78;
+  padding: 10px;
+}
+
+.recherche {
+  max-width: 445px;
+}
+
+.site__branding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .site__branding {
+    flex-direction: column;
+  }
 }
 
 .site__main {

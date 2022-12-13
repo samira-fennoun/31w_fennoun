@@ -44,7 +44,7 @@
             ?>
             
             <div class="site__branding">
-                <div>
+                <div class="logo">
                 <?php
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
@@ -65,7 +65,7 @@
                                                     ?></p>
                 <?php endif; ?>
             </div>
-            <div>
+            <div class="recherche">
                 <?php get_sidebar('entete-1'); ?>
     <?php get_sidebar('entete-2'); ?></div>
             </div><!-- .site__branding -->
