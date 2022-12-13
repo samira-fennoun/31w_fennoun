@@ -42,7 +42,9 @@
                 "container_class" => "menu__primaire"
             ))
             ?>
+            
             <div class="site__branding">
+                <div>
                 <?php
                 the_custom_logo();
                 if (is_front_page() && is_home()) :
@@ -62,6 +64,10 @@
                 <p class="site__description"><?php echo $igc31w_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
                                                     ?></p>
                 <?php endif; ?>
+            </div>
+            <div>
+                <?php get_sidebar('entete-1'); ?>
+    <?php get_sidebar('entete-2'); ?></div>
             </div><!-- .site__branding -->
 
 
