@@ -44,7 +44,7 @@ get_header();
     <?php     $titre = get_the_title();
            
            ?>
-        <h5><?= $titre  ?></h5>
+        <h3><?= $titre  ?></h3>
     <?php
 
             $le_permalien = "<a href='" . get_the_permalink() . "'>&#10132;</a>";
@@ -52,7 +52,7 @@ get_header();
             ?>
 
 
-    <p><?= wp_trim_words(get_the_excerpt(), 30, $le_permalien); ?></p>
+    <p><?= wp_trim_words(get_the_excerpt(), 50, $le_permalien); ?></p>
 
 </div>
 

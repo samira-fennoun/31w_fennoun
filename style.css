@@ -505,7 +505,8 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(0.9rem, 3vw, 3rem);
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -664,6 +665,7 @@ h6 {
   display: flex;
   border-bottom: 1px dashed rgb(116, 115, 112);
   align-items: center;
+  margin: 10px;
 }
 
 .carte .main {
@@ -673,6 +675,11 @@ h6 {
 }
 
 .carte .main p {
+  display: flex;
+  padding: 0;
+}
+
+.carte .main h6 {
   padding: 0;
 }
 

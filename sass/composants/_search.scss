@@ -3,15 +3,22 @@
     
     border-bottom: 1px  dashed rgb(116, 115, 112);
     align-items: center;
+    margin: 10px;
     
 }
 .carte .main{
     
     display: flex;
     flex-direction: column;
+
     margin-left: 10px;
     
 }
 .carte .main p{
+    display: flex;
+  
 padding: 0;
+}
+.carte .main h6{
+    padding: 0;
 }
