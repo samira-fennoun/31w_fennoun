@@ -37,12 +37,14 @@ get_header();
 
     <header>
         <?php the_post_thumbnail('thumbnail');   ?>
+    
+       
+    </header>
+    <div class="main">
     <?php     $titre = get_the_title();
            
            ?>
         <h5><?= $titre  ?></h5>
-       
-    </header>
     <?php
 
             $le_permalien = "<a href='" . get_the_permalink() . "'>&#10132;</a>";
@@ -52,7 +54,7 @@ get_header();
 
     <p><?= wp_trim_words(get_the_excerpt(), 30, $le_permalien); ?></p>
 
-
+</div>
 
     </div>
 

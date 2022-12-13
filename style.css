@@ -660,6 +660,22 @@ h6 {
   padding: 0 2rem 0;
 }
 
+.carte {
+  display: flex;
+  border-bottom: 1px dashed rgb(116, 115, 112);
+  align-items: center;
+}
+
+.carte .main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.carte .main p {
+  padding: 0;
+}
+
 .site__footer {
   padding: 3rem;
   display: flex;
