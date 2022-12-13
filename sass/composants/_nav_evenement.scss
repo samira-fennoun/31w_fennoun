@@ -1,0 +1,44 @@
+.evenement {}
+
+.evenement .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.evenement .menu-item {
+    flex: 0 1 200px;
+    border: 1px solid #aaa;
+}
+
+.menu-item-icone {
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+
+.evenement__stage {
+    background-color: #879d78;
+
+}
+
+.evenement__stage .menu-item-icone {
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=check-circle');
+}
+
+.evenement__projet {
+    background-color: #c9bf93;
+
+    .menu-item-icone {
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=check-circle');
+    }
+}
+
+.evenement__porte {
+    background-color: #dddddd;
+
+    .menu-item-icone {
+        background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=check-circle');
+    }
+}

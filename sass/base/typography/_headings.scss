@@ -1,0 +1,25 @@
+h1{
+	color:#7d2d27;
+	font-size: clamp(1rem,5vw,5rem);
+	font-family: $font__titre;
+}
+h2{
+
+	font-size: clamp(2rem,2vw,4rem);
+	font-family: $font__secondaire;
+}
+h3{
+	font-size: clamp(0.9rem,3vw,3rem);
+}
+h4{
+	font-size: clamp(.8rem,3vw,3rem);
+}
+h5{
+	font-size: clamp(0.7rem,3vw,2rem);
+}
+h6 {
+	font-size: 0.9rem;
+	font-size: clamp(0.9rem, 0.8300000000000001rem + 0.35vw, 1.25rem);;
+}
+  
+

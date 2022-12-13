@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package igc31w
+ */
+
+get_header();
+
+?>
+<h1>single.php</h1>
+<main class="site__main">
+
+    <?php
+    if (have_posts()) :
+
+        /* Start the Loop */
+        while (have_posts()) :
+            the_post(); ?>
+
+    <?php the_post_thumbnail('thumbnail');   ?>
+
+    <h1><?= get_the_title(); ?></h1>
+
+    <header>
+
+        <h3><?= $titre  ?></h3>
+        <code> Code du cours :<?php the_field('sigle_du_cours'); ?></code>
+        <code> /Nombre d'heure :<?php the_field('duree_du_cours'); ?></code>
+        <code> /Nombre d'heure :<?php the_field('type_de_cours'); ?></code>
+    </header>
+
+    <?php the_content(); ?>
+
+
+    <?php
+
+        endwhile;
+
+    endif;
+    ?>
+
+</main><!-- #main -->
+
+<?php
+
+get_footer();

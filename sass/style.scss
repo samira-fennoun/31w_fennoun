@@ -1,0 +1,72 @@
+/*!
+Theme Name: 31w - samira fennoun
+Theme URI: http://underscores.me/
+Author: samirafennoun
+Author URI: https://github.com/e2295531/31w
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: _31w
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+31w is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+// Import variables .
+@import "variables/colors";
+@import "variables/typography";
+@import "variables/structure";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/elements/body";
+@import "base/elements/buttons";
+@import "base/elements/fields";
+
+/*@import "base/elements/hr";
+@import "base/elements/links";
+@import "base/elements/lists";
+@import "base/elements/media";
+@import "base/elements/tables";
+*/
+@import "base/typography/copy";
+@import "base/typography/headings";
+
+
+//composants
+
+@import "composants/nav_primaire";
+@import "composants/nav_aside";
+@import "composants/nav_evenement";
+@import "composants/grille_accueil";
+@import "composants/sidebar";
+@import "composants/footer";
+
+
+@import "layouts/sidebar-content";
+
+
