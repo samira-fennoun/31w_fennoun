@@ -1,21 +1,15 @@
-#  tp2
+#  31W - Introduction à un gestionnaire de contenu
 
-## titre du projet
-Amélioration globalement de mon site (thème, carrousel, Widget sidebar et footer)
-  
+## titre 
+
+  Épreuve finale
 
 ### description
--   Améliorer l'extension carrousel
--   Créer une page d'accueil interactive utiliser le modèle « front-page.php »
--   Dynamiser la structure de menu mobile actuel
--   Améliorer la structure de sidebar
--   Améliorer l'apparence du footer
--   Créer un modèle category-cours pour synthétiser l'offre de cours
--   Créer quelques modèles et templates
--   Continuer à faire progresser le thème
--   Déployer mon projet sur le serveur  **_Siteground_**
+--création deux «sidebars» qui s’intégreront dans l’entête de votre page.
+Les deux sidebars permettront d’intégrer les widget « Recherche » et « icônes sociales »
+--La zone de recherche est fonctionnelle et le résultat de la recherche s’affichera avec le modèle par défaut « index.php ». Vous devrez créer un nouveau modèle pour permettre d’optimiser l’affichage des résultats de la recherche
 
-### lien vers le site siteground
+### lien vers  le tp2 sur site siteground
 https://gogom3.sg-host.com/
 
 ### Auteur 
